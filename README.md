@@ -35,7 +35,9 @@ We'll start by looking at our two variables of interest: The distribution of Bor
 We'll then proceed in looking at the distribution of other quantitative variables. 
 
 #### Borrower APR
+<div style="text-align:center">
 ![](/images/univariate_distribution_of_borrower_APR.png)
+</div>
 <<<<<<< HEAD
 
 Borrower APR is slightly skewed to the right. We can see some peaks throughout the whole distribution. This seems to show that there are certain preconstructed borrower annual percentage rates, the most common one being 0.35.  

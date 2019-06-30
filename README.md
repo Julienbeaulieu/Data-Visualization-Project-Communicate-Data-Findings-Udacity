@@ -7,12 +7,14 @@
 Introduction
 ============
 
-This project is part of the Udacity Data Analyst Nano Degree Program. This document explores a dataset containing information about <a href='https://www.prosper.com/'>Prosper</a>'s loan data. Prosper is America’s first
-marketplace lending platform, with over $9 billion in funded loans.
-This dataset contains 113,937 loans with 81 variables on each loan. We're specifically interested in learning about which kinds of loans yield the highest returns, and which loans have the lowest Annual Percentage Rate (APR). We'll be looking at the relationships among multiple variables using summary statistics and data visualizations. 
+This project is part of the Udacity Data Analyst Nano Degree Program and serves as practice to become better at data visualizations. This document explores a dataset containing information about <a href='https://www.prosper.com/'>Prosper's</a> loan data. Prosper is America’s first marketplace lending platform, with over $9 billion in funded loans.
+This dataset contains 113,937 loans with 81 variables on each loan. 
 
+We're specifically interested in learning about the types of loans that yield the highest returns, and knowing what are the features that correlate with the lowest Annual Percentage Rate (APR). We'll be looking at the relationships among multiple variables using summary statistics and data visualizations. 
+
+**Borrower rate vs Borrower APR**
 When you take out a loan, your interest rate represents the interest percentage you will be charged for borrowing the money, but does not include origination fees, closing fees, documentation fees, and other finance charges. 
-We're looking at APR over interest rates because APR gives you a more comprehensive look at how much you’ll pay when you borrow money for a loan by factoring in these additional fees. When it comes to APR vs. interest rate, the former more accurately represents the true cost of the loan.
+We're looking at APR over interest rates because APR gives you a more comprehensive look at how much you’ll pay when you borrow money by factoring in these additional fees. When it comes to APR vs. interest rate, the former more accurately represents the true cost of the loan.
 
 The outline of this project is:
 
@@ -35,7 +37,7 @@ We'll then proceed in looking at the distribution of other quantitative variable
 #### Borrower APR
 ![](/images/univariate_distribution_of_borrower_APR.png)
 
-Borrower APR is slightly skewed to the right. We can see some peaks throughout the whole distribution, the most obvious one being at 3.5. This seems to show that there are certain preconstructed borrower annual percentage rates, the most common one being 3.5%.  
+Borrower APR is slightly skewed to the right. We can see some peaks throughout the whole distribution. This seems to show that there are certain preconstructed borrower annual percentage rates, the most common one being 0.35.  
 
 #### Estimated Return
 ![](/images/univariate_distribution_of_estimated_return.png)
@@ -164,17 +166,21 @@ Loans over 6000$ and of a duration of 60 months yield the highest returns on ave
 
 ### Borrower APR Analysis
 
-Let's look at which category can the borrower get the best APR. 
+Let's look at the influence of credit score and term length on borrower APR.
 
 ![](/images/multivariate_Borrower_APR_vs_credit_score_and_term_loan.png)
 
 
 As expected, lower credit scores correlate with higher APR. As the loan amount increases, the APR lowers as well. It's also interesting to see that for the "Very Poor" credit score category there are not 60 month term loans. 
 
+### Insight 8:
+Longer term loans have on average lower APR. 
 
+Let's look at which listing categories are associated with low APR. 
 
-The lowest rates are for the 12 month term loan in home improvement, vacation and large purchases.
+![](/images/multivariate_borrow_APR_based_on_categories_and_term_length.png)
 
+The lowest rates are in home improvement, vacation and large purchases categories, for a 60 month term. 
 <br>
 
 Summary and Conclusion
@@ -182,15 +188,20 @@ Summary and Conclusion
 
 With so many variable it was hard to get started because of my limited financial knowledge. There were 81 features to choose from so narrowing the analysis to something meaningful was a challenge. After reading through the descriptions and definitions, I chose ‘BorrowerAPR’ and ‘EstimatedReturn’ as my target variables to get insights on both sides: the borrower and the lender. 
 
+Limitations
+-----------
+
+The analysis done is a good way to begin understanding the data visually. However, in order to determine the true relationships between variables and understand how they influence each other, we would need to conduct statistical tests and anlysis. This is just the first step to comprehending the data. 
 
 
-Here is a summary of the insights gathered with this analysis: 
+Below is a summary of the insights gathered with this analysis: 
 
  - Insight 1: If you were to invest multiple times in different loans, you would yield more returns with smaller loans. For a safer, one time bet, a higher loan would be more appropriate. 
  - Insight 2: Longer term loans are more risky because they have more variability. On average however, the length of the loan has no impact on estimated returns. 
- - Insight 3: Investing in a Home Improvement loan and a large purchase loan, is slightly less profitable than the others on average. The category with the highest returns is Auto (excluding the Not Available category)
- - Insight 4: Having an exceptional credit score makes a huge difference in the APR one can get. 
- - Insight 5: Investing in a 60 month term loan is clearly a better investment than any other term. This is particularly true for the following categories: houseshold expenses, auto, medical/dental, wedding loans, vacation, business and taxes.
- - Insight 6: A 60 month term loan in the vacation cateogy for a fulltime employee is a very good investment.
+ - Insight 3: Investing in a Home Improvement loan and a large purchase loan, is slightly less profitable than the others on average. The category with the highest returns is Auto (excluding the Not Available category).
+ - Insight 4: Having an good credit score makes a huge difference in the APR one can get. 
+ - Insight 5: Investing in a 60 month term loan is a better investment than any other term duration (12 and 30). This is particularly true for the following categories: houseshold expenses, auto, medical/dental, wedding loans, vacation, business and taxes.
+ - Insight 6: A 60 month term loan in the vacation cateogy for a fulltime employee is the best investment we have found in our analysis.
  - Insight 7: Loans over 6000$ and of a duration of 60 months yield the highest returns on average. 
+ - Insight 8: Longer term loans have on average lower APR. 
 

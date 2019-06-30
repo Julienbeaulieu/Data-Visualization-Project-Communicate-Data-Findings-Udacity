@@ -36,6 +36,7 @@ We'll then proceed in looking at the distribution of other quantitative variable
 
 #### Borrower APR
 ![](/images/univariate_distribution_of_borrower_APR.png)
+<<<<<<< HEAD
 
 Borrower APR is slightly skewed to the right. We can see some peaks throughout the whole distribution. This seems to show that there are certain preconstructed borrower annual percentage rates, the most common one being 0.35.  
 
@@ -72,6 +73,8 @@ Overall, it appears that a large majority of loans are either Completed or Curre
 ![](/images/univariate_categorical_variables.png)
 
 #### Listing Categories
+=======
+>>>>>>> 1ff34c85b92e388fa3156d968ae868b342a54f63
 
 ![](/images/univariate_distribution_of_listing_categories.png)
 

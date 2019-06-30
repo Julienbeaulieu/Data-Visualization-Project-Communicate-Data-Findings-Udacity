@@ -29,7 +29,7 @@ We'll start by looking at our two variables of interest: The distribution of Bor
 We'll then proceed in looking at the distribution of other quantitative variables. 
 
 #### Borrower APR
-![](/images/univariate - distribution of borrower APR.png)
+![](/images/univariate_distribution_of_borrower_APR.png)
 
 
 Bivariate Data Analysis

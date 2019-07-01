@@ -38,13 +38,12 @@ We'll then proceed in looking at the distribution of other quantitative variable
 
 ![](/images/univariate_distribution_of_borrower_APR.png)
 
-Borrower APR is slightly skewed to the right. We can see some peaks throughout the whole distribution. This seems to show that there are certain preconstructed borrower annual percentage rates, the most common one being 0.35.  
+Borrower APR is slightly skewed to the left and range from 0.006 to 0.42. We can see some peaks throughout the whole distribution, the most obvious one being at 0.35. This seems to show that there are certain preconstructed borrower annual percentage rates, the most common one being 0.35. 
 
 #### Estimated Return
 ![](/images/univariate_distribution_of_estimated_return.png)
 
-Most return rates fall between 7% and 13%. Anything over 15% is very rare. 
-The average return for a loan is 9.6%. The max in the dataset is 28%. 
+Estimated Returns more or less follows a normal distribution. Return rates range from -0.18 to 0.28. Anything over 0.15 is very rare. The average return for a loan is 0.96.
 
 #### Loan Amounts
 ![](/images/univariate_log_distribution_of_loan_amounts.png)
@@ -56,7 +55,7 @@ Loans can range from 1000\\$ (the minimum amount in the dataset) to 35,000\\$. M
 
 ![](/images/univariate_log_distribution_of_monthly_payments.png)
 
-We also used log scale for this graph. This allows us to better understand the distribution of loans between 100 and 500\\$. A commmon loan payment is around 175\\$ / month. The median monthly payment is $217, less than the mean of $272, so the distribution skews toward smaller monthly payments. No payment is more than $2,252, but that appears to be a signficant outlier. There are very few payments above $1,000.
+We also used log scale for this graph. This allows us to better understand the distribution of loans between 100 and 500\\$. A commmon loan payment is around 175\\$ / month. The median monthly payment is \\$217, less than the mean of \\$272, so the distribution skews toward smaller monthly payments. No payment is more than \\$2,252, but that appears to be a signficant outlier. There are very few payments above \\$1,000.
 
 ### Ordinal Variables
 
